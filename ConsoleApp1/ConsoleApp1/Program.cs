@@ -7,13 +7,13 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Order order1 = new Order();
-            order1.Totalamount = 51;
+            order1.TotalAmount = 51;
             order1.CreatedAt = DateTime.Now.AddMonths(-1);
             Order order2 = new Order();
-            order2.Totalamount = 65;
+            order2.TotalAmount = 65;
             order2.CreatedAt = DateTime.Now.AddDays(-1);
             Order order3 = new Order();
-            order3.Totalamount = 47;
+            order3.TotalAmount = 47;
             order3.CreatedAt = DateTime.Now;
             Shop shop = new Shop();
             shop.AddOrder(order1);
@@ -26,7 +26,7 @@ namespace ConsoleApp1
             Console.WriteLine("===============FilterOrderByPrice===============");
             foreach (var item in shop.FilterOrderByPrice(50,66))
             {
-                Console.WriteLine(item.Totalamount);
+                Console.WriteLine(item.TotalAmount);
             }
             Console.WriteLine("===========RemoveOrderByNo===========");
             shop.RemoveOrderByNo(2);

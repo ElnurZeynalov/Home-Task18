@@ -22,7 +22,7 @@ namespace ConsoleApp1
             }
 
         }
-        public double Totalamount { get; set; }
+        public double TotalAmount { get; set; }
         //private DateTime _createdAt;
         public DateTime CreatedAt { get; set; } //set silmisdim zaman ferqin aydin olamsi ucun bele edledim
         public Order()
@@ -34,7 +34,7 @@ namespace ConsoleApp1
         }
         public string ShowInfo()
         {
-            return $"No: {No} - ProductCount: {ProductCount} - TotalAmount {Totalamount} - CreatedAt: {CreatedAt}";
+            return $"No: {No} - ProductCount: {ProductCount} - TotalAmount {TotalAmount} - CreatedAt: {CreatedAt}";
         }
     }
 }

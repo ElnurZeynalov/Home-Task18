@@ -20,7 +20,7 @@ namespace ConsoleApp1
             double total = 0 ;
             foreach (var item in _orders)
             {
-                total += item.Totalamount;
+                total += item.TotalAmount;
             }
             return total/_orders.Count;
         }
@@ -30,7 +30,7 @@ namespace ConsoleApp1
             double total = 0 ;
             foreach (var item in filtred)
             {
-                total += item.Totalamount;
+                total += item.TotalAmount;
             }
             return total/filtred.Count;
         }
@@ -45,7 +45,7 @@ namespace ConsoleApp1
         }
         public List<Order> FilterOrderByPrice(double minPrice, double maxPrice)
         {
-            return _orders.FindAll(item => item.Totalamount >= minPrice && item.Totalamount <= maxPrice);
+            return _orders.FindAll(item => item.TotalAmount >= minPrice && item.TotalAmount <= maxPrice);
         }
         public List<Order> GetAllOrders()
         {
